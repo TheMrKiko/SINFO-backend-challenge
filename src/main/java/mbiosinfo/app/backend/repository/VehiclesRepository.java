@@ -1,13 +1,16 @@
-package mbiosinfo.app.backend.service;
+package mbiosinfo.app.backend.repository;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
-@Service
-public class VehiclesService {
-	
-	@Autowired
-    private JdbcTemplate jbctemp;
+import mbiosinfo.app.backend.bean.Root;
+
+import java.io.Serializable;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+//import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+@Repository
+public interface VehiclesRepository /*extends CrudRepository<Root, Long>*/ {
 
 }
